@@ -1,0 +1,110 @@
+/* Global Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #f0f0f0; /* Latar belakang lembut */
+  color: black;
+}
+
+.linktree-container {
+  text-align: center;
+  width: 90%;
+  max-width: 450px;
+  background: rgba(255, 255, 255, 0.9); /* Latar belakang lebih terang */
+  border-radius: 15px;
+  padding: 20px;
+  display: flex; /* Gunakan Flexbox */
+  flex-direction: column;
+  justify-content: center; /* Pusatkan konten secara vertikal */
+  align-items: center; /* Pusatkan Konten Secara Horizontal */
+  height: 100%; /* Memastikan Kontainer mengambil Seluruh Tinggi Tampilan */
+  box-shadow: 
+    0px 4px 15px rgba(0, 0, 0, 0.3), /* Shadow pertama (lebih tajam) */
+    0px 10px 30px rgba(0, 0, 0, 0.15), /* Shadow kedua (lebih besar dan lebih blur) */
+    0px 15px 45px rgba(0, 0, 0, 0.1); /* Shadow ketiga (lebih kabur dan besar) */
+}
+
+/* Profile Section Tanpa Border dan Box Shadow */
+.profile-section {
+  margin-bottom: 20px;
+  background: none; /* Tidak ada latar belakang */
+  padding: 0;
+}
+
+.profile-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%; /* Membuat gambar profil menjadi lingkaran */
+  margin-bottom: 15px;
+}
+
+.profile-section h1 {
+  font-size: 2rem;
+  margin: 0;
+  color: #333;
+}
+
+.profile-section p {
+  font-size: 1.1rem;
+  margin: 5px 0;
+  color: #555;
+}
+
+/* Links Section */
+.links-section {
+  display: flex;
+  flex-direction: column; /* Menyusun tautan secara vertical */
+  gap: 20px; /* Jarak antar tautan lebih besar */
+  width: 100%; /* Menjaga lebar penuh */
+}
+
+.link {
+  display: flex; 
+  align-items: center;
+  justify-content: center; /* Menjaga teks dan logo di tengah */
+  text-decoration: none;
+  font-size: 1.1rem; /* Ukuran font sedikit lebih besar */
+  font-weight: bold;
+  color: black;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 15px 25px; /* Menambah padding agar kotak lebih besar */
+  border-radius: 30px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Shadow lembut pada setiap link */
+  min-width: 250px; /* Menetapkan lebar minimal untuk setiap link */
+}
+
+.link img.icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 12px;
+  vertical-align: middle;
+}
+
+.link:hover {
+  background: rgba(0, 0, 0, 0.05);
+  transform: scale(1.05);
+  box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.2); /* Shadow lebih besar saat hover */
+}
+
+/* Footer */
+.footer {
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.footer a {
+  color: #333;
+  text-decoration: underline;
+}
+
+.footer a:hover {
+  color: red; /* Mengubah warna saat hover */
+  text-decoration: none;
+}
